@@ -1,77 +1,143 @@
 /* Reset de estilos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Estilos do corpo */
+/* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+  background-color: #e60000;
+  padding: 10px 0;
+  text-align: center;
 }
 
-header .logo img {agronegocio
-    width: 150px;
+header .logo h1 {
+  margin: 0;
+  font-size: 2.5rem;
 }
 
 header nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 header nav ul li {
-    display: inline;
-    margin: 0 15px;
+  display: inline;
+  margin-right: 20px;
 }
 
 header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* Seções principais */
-main {
-    padding: 20px;
-    background-color: white;
-    margin: 20px auto;
-    max-width: 900px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Seções */
+section {
+  padding: 20px;
+  margin: 20px 0;
 }
 
-main h2 {
-    color: #4CAF50;
-    margin-bottom: 10px;
+.hero {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
 }
 
-main p {
-    margin-bottom: 15px;
-    text-align: justify;
+.hero h2 {
+  font-size: 2rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Acordeões */
+.accordion {
+  background-color: #444;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.accordion.active, .accordion:hover {
+  background-color: #555;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #222;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form label, form input {
+  margin-bottom: 10px;
+}
+
+form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #e60000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #cc0000;
 }
 
 /* Rodapé */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  background-color: #333;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
