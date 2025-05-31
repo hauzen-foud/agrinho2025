@@ -1,117 +1,351 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impacto do Agronegócio e Economia</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <h1>Impacto Econômico</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#home">Início</a></li>
-        <li><a href="#cadastro">Cadastro</a></li>
-        <li><a href="#contatos">Contatos</a></li>
-      </ul>
-    </nav>
-  </header>
+html {
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+    line-height: 1.5;
+}
+html {
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+html {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+}
+*, :after, :before {
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-border-opacity: 1;
+    border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+    --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(62, 172, 255, .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-blur: var(--tw-empty, /*!*/ /*!*/);
+    --tw-brightness: var(--tw-empty, /*!*/ /*!*/);
+    --tw-contrast: var(--tw-empty, /*!*/ /*!*/);
+    --tw-grayscale: var(--tw-empty, /*!*/ /*!*/);
+    --tw-hue-rotate: var(--tw-empty, /*!*/ /*!*/);
+    --tw-invert: var(--tw-empty, /*!*/ /*!*/);
+    --tw-saturate: var(--tw-empty, /*!*/ /*!*/);
+    --tw-sepia: var(--tw-empty, /*!*/ /*!*/);
+    --tw-drop-shadow: var(--tw-empty, /*!*/ /*!*/);
+    --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+    --tw-backdrop-blur: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-brightness: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-contrast: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-grayscale: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-hue-rotate: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-invert: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-opacity: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-saturate: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-sepia: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+*, ::backdrop, :after, :before {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #3b82f680;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+*, :after, :before {
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-border-opacity: 1;
+    border-color: rgba(229,231,235, var(--tw-border-opacity));
+    --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(62, 172, 255, .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-blur: var(--tw-empty, /*!*/ /*!*/);
+    --tw-brightness: var(--tw-empty, /*!*/ /*!*/);
+    --tw-contrast: var(--tw-empty, /*!*/ /*!*/);
+    --tw-grayscale: var(--tw-empty, /*!*/ /*!*/);
+    --tw-hue-rotate: var(--tw-empty, /*!*/ /*!*/);
+    --tw-invert: var(--tw-empty, /*!*/ /*!*/);
+    --tw-saturate: var(--tw-empty, /*!*/ /*!*/);
+    --tw-sepia: var(--tw-empty, /*!*/ /*!*/);
+    --tw-drop-shadow: var(--tw-empty, /*!*/ /*!*/);
+    --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+    --tw-backdrop-blur: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-brightness: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-contrast: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-grayscale: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-hue-rotate: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-invert: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-opacity: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-saturate: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-sepia: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+*, :after, :before {
+    box-sizing: border-box;
+    border: 0 solid;
+}
+*, ::backdrop, :after, :before {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #3b82f680;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+:after, :before {
+    --tw-content: "";
+}
+*, :after, :before {
+    border: 0 solid #e5e7eb;
+}
+*, :after, :before {
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-border-opacity: 1;
+    border-color: rgba(229,231,235, var(--tw-border-opacity));
+    --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(62, 172, 255, .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-blur: var(--tw-empty, /*!*/ /*!*/);
+    --tw-brightness: var(--tw-empty, /*!*/ /*!*/);
+    --tw-contrast: var(--tw-empty, /*!*/ /*!*/);
+    --tw-grayscale: var(--tw-empty, /*!*/ /*!*/);
+    --tw-hue-rotate: var(--tw-empty, /*!*/ /*!*/);
+    --tw-invert: var(--tw-empty, /*!*/ /*!*/);
+    --tw-saturate: var(--tw-empty, /*!*/ /*!*/);
+    --tw-sepia: var(--tw-empty, /*!*/ /*!*/);
+    --tw-drop-shadow: var(--tw-empty, /*!*/ /*!*/);
+    --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+    --tw-backdrop-blur: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-brightness: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-contrast: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-grayscale: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-hue-rotate: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-invert: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-opacity: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-saturate: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-sepia: var(--tw-empty, /*!*/ /*!*/);
+    --tw-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+*, :after, :before {
+    box-sizing: border-box;
+    border: 0 solid;
+}
+*, ::backdrop, :after, :before {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #3b82f680;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+:after, :before {
+    --tw-content: "";
+}
+*, :after, :before {
+    border: 0 solid #e5e7eb;
+}
+*, ::backdrop, :after, :before {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #3b82f680;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
 
-  <section id="home">
-    <div class="hero">
-      <h2>O Impacto do Agronegócio na Economia</h2>
-      <p>Explore como o agronegócio influencia as economias rural e urbana.</p>
-    </div>
-
-    <div class="content">
-      <button class="accordion">O que é Agronegócio?</button>
-      <div class="panel">
-        <p>O agronegócio engloba todas as atividades econômicas relacionadas à produção, processamento e distribuição de produtos agrícolas...</p>
-      </div>
-
-      <button class="accordion">Economia Rural vs Urbana</button>
-      <div class="panel">
-        <p>A economia rural é baseada na agricultura e pecuária, enquanto a urbana envolve setores industriais e de serviços...</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="cadastro">
-    <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Cadastro de Usuário</h1>
-  </header>
-
-  <main>
-    <section class="form-container">
-      <form action="#" method="POST">
-        <label for="nome">Nome Completo</label>
-        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
-
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
-
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
-
-        <label for="confirmar-senha">Confirmar Senha</label>
-        <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme sua senha" required>
-
-        <label for="foto-perfil">Foto de Perfil</label>
-        <input type="file" id="foto-perfil" name="foto-perfil" accept="image/*">
-
-        <button type="submit">Cadastrar</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Seu Site. Todos os direitos reservados.</p>
-  </footer>
-</body>
-</html>
-    <h2>Cadastro</h2>
-    <form>
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <section id="contatos">
-    <h2>Contatos</h2>
-    <p>Para mais informações, entre em contato conosco pelo e-mail: <a href="mailto:contato@impactoeconomico.com">contato@impactoeconomico.com</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Impacto Econômico. Todos os direitos reservados.</p>
-  </footer>
-
-  <script>
-    var acc = document.getElementsByClassName("accordion");
-    for (var i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-      });
-    }
-  </script>
-</body>
 </html>
