@@ -89,3 +89,21 @@ footer {
   text-align: center;
   padding: 15px;
 }
+
+.show-btn,
+input[type="submit"] {
+  background-color: #444;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.show-btn:hover,
+input[type="submit"]:hover {
+  background-color: #008000;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00ff00aa;
+}
