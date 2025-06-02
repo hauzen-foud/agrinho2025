@@ -1,254 +1,423 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Impactos do Agronegócio</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impactos do Agronegócio - Lar</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">AgroImpacto</a>
+            <ul>
+                <li><a href="index.html">Lar</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="whatsapp.html" target="_blank" aria-label="WhatsApp">
+                    <img src="https://placehold.co/30x30/25D366/FFFFFF?text=W" alt="WhatsApp">
+                </a>
+                <a href="facebook.html" target="_blank" aria-label="Facebook">
+                    <img src="https://placehold.co/30x30/1877F2/FFFFFF?text=F" alt="Facebook">
+                </a>
+                <a href="instagram.html" target="_blank" aria-label="Instagram">
+                    <img src="https://placehold.co/30x30/E4405F/FFFFFF?text=I" alt="Instagram">
+                </a>
+            </div>
+        </nav>
+    </header>
 
-    header {
-      background-color: #008000;
-      padding: 20px;
-      text-align: center;
-    }
+    <main class="main-content">
+        <section class="container hero">
+            <h1>Analisando os Diversos Impactos do Agronegócio</h1>
+            <p>O agronegócio é um setor vital para a economia, mas seus impactos ambientais, sociais e econômicos são complexos e merecem atenção.</p>
+        </section>
 
-    header h1 {
-      margin: 0;
-    }
+        <section class="container topics-section">
+            <h2>Tópicos Gerais sobre o Agronegócio</h2>
+            <p>O agronegócio abrange uma vasta cadeia produtiva, desde o plantio e criação até a distribuição e comercialização de alimentos e outros produtos agrícolas. Sua modernização trouxe aumentos significativos de produtividade, mas também gerou debates sobre sustentabilidade e equidade.</p>
+            <ul>
+                <li><strong>Desenvolvimento Econômico:</strong> Geração de empregos, divisas através da exportação e contribuição para o PIB.</li>
+                <li><strong>Segurança Alimentar:</strong> Produção de alimentos em larga escala para abastecer populações crescentes.</li>
+                <li><strong>Inovação Tecnológica:</strong> Uso de maquinário avançado, biotecnologia, agricultura de precisão.</li>
+                <li><strong>Desafios Logísticos:</strong> Transporte e armazenamento de produtos perecíveis em grandes extensões territoriais.</li>
+            </ul>
+        </section>
 
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+        <section class="container impacts-grid">
+            <h2>Impactos Detalhados</h2>
 
-    .social {
-      margin-top: 10px;
-    }
+            <div class="impact-card">
+                <img src="https://placehold.co/600x400/A9A9A9/FFFFFF?text=Impacto+Ambiental" alt="Imagem representando impacto ambiental do agronegócio" class="impact-image">
+                <div class="card-content">
+                    <h3>Impactos Ambientais</h3>
+                    <p>O agronegócio pode exercer pressão significativa sobre os recursos naturais...</p>
+                    <button class="toggle-btn" onclick="toggleText('text-ambiental', this)">Ver mais</button>
+                    <div id="text-ambiental" class="hidden-text">
+                        <p><strong>Desmatamento:</strong> A expansão de áreas agrícolas e pastagens é uma das principais causas de desmatamento em biomas como a Amazônia e o Cerrado, levando à perda de biodiversidade e alterando regimes hídricos.</p>
+                        <p><strong>Uso da Água:</strong> A irrigação em larga escala consome grandes volumes de água, podendo levar à escassez hídrica em algumas regiões e à sobre-exploração de aquíferos.</p>
+                        <p><strong>Contaminação do Solo e da Água:</strong> O uso intensivo de agrotóxicos e fertilizantes químicos pode contaminar solos e corpos d'água, afetando ecossistemas aquáticos e a saúde humana.</p>
+                        <p><strong>Emissões de Gases de Efeito Estufa:</strong> A pecuária (principalmente bovina, pela emissão de metano), o desmatamento e o uso de maquinário agrícola contribuem para as emissões que intensificam as mudanças climáticas.</p>
+                    </div>
+                </div>
+            </div>
 
-    .social a {
-      color: #fff;
-      margin: 0 8px;
-      text-decoration: none;
-    }
+            <div class="impact-card">
+                <img src="https://placehold.co/600x400/A9A9A9/FFFFFF?text=Impacto+Social" alt="Imagem representando impacto social do agronegócio" class="impact-image">
+                <div class="card-content">
+                    <h3>Impactos Sociais</h3>
+                    <p>As transformações no campo impulsionadas pelo agronegócio geram consequências sociais diversas...</p>
+                    <button class="toggle-btn" onclick="toggleText('text-social', this)">Ver mais</button>
+                    <div id="text-social" class="hidden-text">
+                        <p><strong>Concentração de Terra:</strong> A expansão do agronegócio muitas vezes está associada à concentração de terras, dificultando o acesso à terra por pequenos agricultores e comunidades tradicionais.</p>
+                        <p><strong>Êxodo Rural:</strong> A modernização e a mecanização podem reduzir a necessidade de mão de obra no campo, contribuindo para o êxodo rural e o inchaço das cidades.</p>
+                        <p><strong>Condições de Trabalho:</strong> Embora haja avanços, ainda persistem desafios relacionados a condições de trabalho análogas à escravidão e à exposição de trabalhadores a agrotóxicos em algumas cadeias produtivas.</p>
+                        <p><strong>Conflitos por Terra:</strong> Disputas por terra entre grandes produtores, comunidades indígenas, quilombolas e pequenos agricultores são uma realidade em diversas regiões.</p>
+                    </div>
+                </div>
+            </div>
 
-    .content {
-      padding: 20px;
-    }
+            <div class="impact-card">
+                <img src="https://placehold.co/600x400/A9A9A9/FFFFFF?text=Impacto+Econômico" alt="Imagem representando impacto econômico do agronegócio" class="impact-image">
+                <div class="card-content">
+                    <h3>Impactos Econômicos</h3>
+                    <p>O agronegócio é um motor da economia, mas também apresenta vulnerabilidades...</p>
+                    <button class="toggle-btn" onclick="toggleText('text-economico', this)">Ver mais</button>
+                    <div id="text-economico" class="hidden-text">
+                        <p><strong>Geração de Riqueza e Exportações:</strong> É um dos principais setores exportadores, gerando divisas importantes para a balança comercial do país.</p>
+                        <p><strong>Dependência de Commodities:</strong> A forte dependência da exportação de commodities pode tornar a economia vulnerável às flutuações de preços no mercado internacional.</p>
+                        <p><strong>Desenvolvimento Regional:</strong> Pode impulsionar o desenvolvimento de algumas regiões, mas também criar desigualdades entre áreas com diferentes vocações agrícolas.</p>
+                        <p><strong>Cadeia Produtiva Complexa:</strong> Envolve uma ampla gama de indústrias e serviços, desde a produção de insumos até o processamento e distribuição de alimentos.</p>
+                    </div>
+                </div>
+            </div>
 
-    .section {
-      margin-bottom: 30px;
-    }
+        </section>
+    </main>
 
-    .hidden-text {
-      display: none;
-      margin-top: 10px;
-    }
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AgroImpacto. Todos os direitos reservados.</p>
+            <p>Informações sobre os impactos do agronegócio.</p>
+        </div>
+    </footer>
 
-    .show-btn {
-      background-color: #444;
-      color: #fff;
-      padding: 8px 12px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .images img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 8px;
-      margin: 10px 0;
-    }
-
-    form {
-      background-color: #222;
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: none;
-      border-radius: 5px;
-    }
-
-    input[type="submit"] {
-      background-color: #008000;
-      color: #fff;
-      cursor: pointer;
-    }
-
-    footer {
-      background-color: yellow;
-      color: #000;
-      text-align: center;
-      padding: 15px;
-    }
-  </style>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - AgroImpacto</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-  <h1>Impactos do Agronegócio</h1>
-  <nav>
-    <a href="#">Lar</a>
-    <a href="#">Contato</a>
-  </nav>
-  <div class="social">
-    <a href="https://wa.me/" target="_blank">WhatsApp</a> |
-    <a href="https://instagram.com" target="_blank">Instagram</a> |
-    <a href="https://facebook.com" target="_blank">Facebook</a> |
-    <a href="https://twitter.com" target="_blank">Twitter</a>
-  </div>
-</header>
-
-<meta charset="UTF-T">
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">AgroImpacto</a>
+            <ul>
+                <li><a href="index.html">Lar</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agronegócio Detalhado</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Estilos personalizados adicionais, se necessário */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .content-section {
-            @apply bg-white shadow-lg rounded-lg p-6 mb-6 transition-all duration-300 ease-in-out;
-        }
-        .content-section h2 {
-            @apply text-2xl font-bold text-gray-800 mb-3;
-        }
-        .content-section p {
-            @apply text-gray-700 leading-relaxed mb-4;
-        }
-        .hidden-text {
-            @apply overflow-hidden max-h-0 transition-all duration-700 ease-in-out;
-        }
-        .hidden-text.show {
-            @apply max-h-screen; /* ou um valor grande o suficiente para o conteúdo */
-        }
-        .show-btn {
-            @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-colors duration-200 ease-in-out cursor-pointer;
-            @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50;
-        }
-        .show-btn.expanded {
-            @apply bg-red-600 hover:bg-red-700;
-        }
-    </style>
+    <title>Contatos - AgroImpacto</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100 p-4 md:p-8">
-
-    <div class="container mx-auto max-w-3xl">
-        <header class="text-center mb-10">
-            <h1 class="text-4xl font-bold text-gray-900">Entendendo o Agronegócio</h1>
-        </header>
-
-        <div class="content">
-            <div class="content-section">
-                <h2>O Que é Agronegócio?</h2>
-                <p>O agronegócio é o conjunto de atividades econômicas que derivam ou estão conectadas à produção agrícola e seu comércio. Trata-se de um importante pilar da economia brasileira.</p>
-                <p>Aliás, engana-se quem pensa que o agro restringe-se à fazenda e à colheita. Existem vários exemplos de organizações do agro, como empresas de fabricação de máquinas agrícolas, fornecimento de sementes e produtoras de agroquímicos.</p>
-                
-                <div id="text1" class="hidden-text">
-                    <p>A agricultura é um dos setores econômicos que mais emprega pessoas no mundo.</p>
-                    <p>No Brasil, de acordo com dados da Confederação da Agricultura e Pecuária do Brasil (CNA) divulgados no portal Uol, o mercado agro brasileiro registrou a abertura de mais de 61 mil vagas em 2020.</p>
-                    <p>Trata-se do melhor resultado nos últimos 10 anos!</p>
-                    <p>Com a crise e a pandemia, a produção agrícola brasileira ganhou destaque, sendo a válvula de escape para vários países.</p>
-                    <p>Especialmente no Brasil, onde o agronegócio familiar é a principal fonte de alimentos e renda para muitas pessoas que vivem na pobreza.</p>
-                    <p>Assim, investir na agricultura não é apenas uma das estratégias mais eficazes para melhorar a segurança alimentar e promover a sustentabilidade, mas também é essencial para o desenvolvimento econômico de muitos países.</p>
-                    <p>O agronegócio trata os diferentes aspectos da criação de produtos agrícolas como um sistema integrado.</p>
-                    <p>Os agricultores criam animais e colhem frutas e vegetais com a ajuda de técnicas sofisticadas de colheita, incluindo o uso de geolocalização para direcionar as operações.</p>
-                    <p>Por outro lado, os fabricantes da agroindústria desenvolvem máquinas cada vez mais eficientes.</p>
-                    <p>Inclusive, equipamentos autônomos, um exemplo são as colheitadeiras com piloto automático.</p>
-                    <p>Já as fábricas de alimentos, em especial de origem animal, determinam a melhor maneira de processar a carne e embalar o gado para transporte.</p>
-                    <p>Percebe como os elos vão se interligando? Por isso que uma denominação comum do mercado agro é que seja o supply chain por trás dos produtos agrícolas comercializados para o consumidor final.</p>
-                    <p>Embora seja improvável que cada subconjunto dessa indústria interaja diretamente com o consumidor final, cada um se concentra em operar de forma eficiente para manter os preços razoáveis.</p>
-                    <p>Vale ainda ressaltar que o agronegócio é fortemente impactado pelo mercado e suas tendências, bem como por forças naturais, como as mudanças climáticas.</p>
-                </div>
-                <button class="show-btn" onclick="toggleText('text1', this)">Ver mais</button>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">AgroImpacto</a>
+            <ul>
+                <li><a href="index.html">Lar</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="whatsapp.html" target="_blank" aria-label="WhatsApp">
+                    <img src="https://placehold.co/30x30/25D366/FFFFFF?text=W" alt="WhatsApp">
+                </a>
+                <a href="facebook.html" target="_blank" aria-label="Facebook">
+                    <img src="https://placehold.co/30x30/1877F2/FFFFFF?text=F" alt="Facebook">
+                </a>
+                <a href="instagram.html" target="_blank" aria-label="Instagram">
+                    <img src="https://placehold.co/30x30/E4405F/FFFFFF?text=I" alt="Instagram">
+                </a>
             </div>
+        </nav>
+    </header>
 
-            <div class="content-section">
-                <h2>Importância do Agronegócio</h2>
-                <p>O agronegócio desempenha um papel crucial na economia global, fornecendo alimentos, fibras e combustíveis. Além disso, é uma fonte significativa de emprego e renda para milhões de pessoas em todo o mundo, especialmente em países em desenvolvimento.</p>
-                <p>A inovação tecnológica tem sido um motor chave para o aumento da produtividade e sustentabilidade no setor.</p>
+    <main class="main-content">
+        <section class="container">
+            <div class="form-container placeholder-page"> <h2>Entre em Contato</h2>
+                <p>Tem alguma dúvida, sugestão ou gostaria de colaborar? Utilize os canais abaixo ou preencha o formulário.</p>
                 
-                <div id="text2" class="hidden-text">
-                    <p>No Brasil, o agronegócio é responsável por uma parcela expressiva do Produto Interno Bruto (PIB) e das exportações. O país se destaca na produção de commodities como soja, milho, café, carne bovina e de frango.</p>
-                    <p>Desafios como a logística, infraestrutura, questões ambientais e a volatilidade dos preços internacionais exigem constante adaptação e investimento por parte dos produtores e empresas do setor.</p>
-                    <p>A busca por práticas agrícolas sustentáveis, que minimizem o impacto ambiental e promovam o bem-estar social, é uma tendência crescente e fundamental para o futuro do agronegócio.</p>
+                <div style="margin-bottom: 30px; text-align: left;">
+                    <p><strong>E-mail:</strong> contato@agroimpacto.example.com</p>
+                    <p><strong>Telefone:</strong> (XX) XXXXX-XXXX</p>
+                    <p><strong>Endereço:</strong> Rua Fictícia, 123, Cidade Exemplo, Estado</p>
                 </div>
-                <button class="show-btn" onclick="toggleText('text2', this)">Ver mais</button>
-            </div>
 
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="contact-name">Nome:</label>
+                        <input type="text" id="contact-name" name="contact-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">E-mail:</label>
+                        <input type="email" id="contact-email" name="contact-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Assunto:</label>
+                        <input type="text" id="contact-subject" name="contact-subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Mensagem:</label>
+                        <textarea id="contact-message" name="contact-message" required></textarea>
+                    </div>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+                <div id="contactFormMessage" style="margin-top: 20px; text-align: center;"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AgroImpacto. Todos os direitos reservados.</p>
         </div>
-    </div>
-
+    </footer>
+    <script src="script.js"></script>
     <script>
-        function toggleText(textId, button) {
-            const textElement = document.getElementById(textId);
-            const isExpanded = textElement.classList.toggle('show');
-            
-            if (isExpanded) {
-                button.textContent = 'Ver menos';
-                button.classList.add('expanded');
-            } else {
-                button.textContent = 'Ver mais';
-                button.classList.remove('expanded');
-            }
+        // Simples feedback para o formulário de contato
+        const contactForm = document.getElementById('contactForm');
+        const contactFormMessage = document.getElementById('contactFormMessage');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Impede o envio real do formulário
+                contactFormMessage.textContent = 'Mensagem enviada com sucesso! (Esta é uma demonstração).';
+                contactFormMessage.style.color = '#5cb85c';
+                contactForm.reset();
+                 setTimeout(() => {
+                    contactFormMessage.textContent = '';
+                }, 5000);
+            });
         }
     </script>
-
 </body>
 </html>
-  <div class="section">
-    <h2>Impactos Ambientais</h2>
-    <p>O uso intensivo de terras tem efeitos diretos no meio ambiente.</p>
-    <button class="show-btn" onclick="toggleText('text2')">Ver mais</button>
-    <div id="text2" class="hidden-text">
-      <p>Desmatamento, uso excessivo de agrotóxicos, poluição de rios e perda de biodiversidade estão entre os principais problemas ambientais causados pelo agronegócio em larga escala.</p>
-    </div>
-  </div>
 
-  <div class="section">
-    <h2>Imagens Relacionadas</h2>
-    <div class="images">
-      <img src="https://via.placeholder.com/400x200?text=Desmatamento" alt="Desmatamento">
-      <img src="https://via.placeholder.com/400x200?text=Monocultura" alt="Monocultura">
-    </div>
-  </div>
+          
+            <div class="social-media">
+                <a href="whatsapp.html" target="_blank" aria-label="WhatsApp">
+                    <img src="https://placehold.co/30x30/25D366/FFFFFF?text=W" alt="WhatsApp">
+                </a>
+                <a href="facebook.html" target="_blank" aria-label="Facebook">
+                    <img src="https://placehold.co/30x30/1877F2/FFFFFF?text=F" alt="Facebook">
+                </a>
+                <a href="instagram.html" target="_blank" aria-label="Instagram">
+                    <img src="https://placehold.co/30x30/E4405F/FFFFFF?text=I" alt="Instagram">
+                </a>
+            </div>
+        </nav>
+    </header>
 
-  <div class="section">
-    <h2>Cadastro</h2>
-    <form>
-      <input type="text" name="nome" placeholder="Nome completo" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <textarea name="mensagem" placeholder="Mensagem ou comentário" rows="4"></textarea>
-      <input type="submit" value="Enviar">
-    </form>
-  </div>
-</div>
+    <main class="main-content">
+        <section class="container">
+            <div class="form-container">
+                <h2>Formulário de Cadastro</h2>
+                <p style="text-align: center; margin-bottom: 20px; color: #ccc;">Preencha os campos abaixo para se cadastrar em nossa newsletter e receber atualizações.</p>
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="name">Nome Completo:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone (Opcional):</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">Área de Interesse:</label>
+                        <select id="interest" name="interest" style="width: 100%; padding: 12px; border: 1px solid #444; border-radius: 5px; background-color: #333; color: #f0f0f0; font-size: 1rem;">
+                            <option value="">Selecione uma opção</option>
+                            <option value="ambiental">Impactos Ambientais</option>
+                            <option value="social">Impactos Sociais</option>
+                            <option value="economico">Impactos Econômicos</option>
+                            <option value="geral">Notícias Gerais do Agronegócio</option>
+                        </select>
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                </form>
+                 <div id="formMessage" style="margin-top: 20px; text-align: center;"></div>
+            </div>
+        </section>
+    </main>
 
-<footer>
-  &copy; 2025 Impactos do Agronegócio. Todos os direitos reservados.
-</footer>
-
-<script>
-  function toggleText(id) {
-    const el = document.getElementById(id);
-    el.style.display = el.style.display === "block" ? "none" : "block";
-  }
-</script>
-
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AgroImpacto. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        // Simples feedback para o formulário de cadastro
+        const registrationForm = document.getElementById('registrationForm');
+        const formMessage = document.getElementById('formMessage');
+        if (registrationForm) {
+            registrationForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Impede o envio real do formulário
+                const name = document.getElementById('name').value;
+                formMessage.textContent = `Obrigado por se cadastrar, ${name}! (Esta é uma demonstração).`;
+                formMessage.style.color = '#5cb85c';
+                registrationForm.reset();
+                setTimeout(() => {
+                    formMessage.textContent = '';
+                }, 5000);
+            });
+        }
+    </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp - AgroImpacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">AgroImpacto</a>
+            <ul>
+                <li><a href="index.html">Lar</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="whatsapp.html" target="_blank" aria-label="WhatsApp">
+                    <img src="https://placehold.co/30x30/25D366/FFFFFF?text=W" alt="WhatsApp">
+                </a>
+                <a href="facebook.html" target="_blank" aria-label="Facebook">
+                    <img src="https://placehold.co/30x30/1877F2/FFFFFF?text=F" alt="Facebook">
+                </a>
+                <a href="instagram.html" target="_blank" aria-label="Instagram">
+                    <img src="https://placehold.co/30x30/E4405F/FFFFFF?text=I" alt="Instagram">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="container placeholder-page">
+            <h1>Nosso WhatsApp</h1>
+            <p>Você está sendo redirecionado para o nosso WhatsApp.</p>
+            <p>Se o redirecionamento não ocorrer, nosso número é: <strong>(XX) XXXXX-XXXX</strong></p>
+            <p><a href="index.html">Voltar para a página inicial</a></p>
+            </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AgroImpacto. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - AgroImpacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">AgroImpacto</a>
+            <ul>
+                <li><a href="index.html">Lar</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="whatsapp.html" target="_blank" aria-label="WhatsApp">
+                    <img src="https://placehold.co/30x30/25D366/FFFFFF?text=W" alt="WhatsApp">
+                </a>
+                <a href="facebook.html" target="_blank" aria-label="Facebook">
+                    <img src="https://placehold.co/30x30/1877F2/FFFFFF?text=F" alt="Facebook">
+                </a>
+                <a href="instagram.html" target="_blank" aria-label="Instagram">
+                    <img src="https://placehold.co/30x30/E4405F/FFFFFF?text=I" alt="Instagram">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="container placeholder-page">
+            <h1>Nosso Facebook</h1>
+            <p>Você está sendo redirecionado para a nossa página no Facebook.</p>
+            <p>Se o redirecionamento não ocorrer, procure por <strong>@AgroImpactoOficial</strong> no Facebook.</p>
+            <p><a href="index.html">Voltar para a página inicial</a></p>
+            </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AgroImpacto. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram - AgroImpacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">AgroImpacto</a>
+            <ul>
+                <li><a href="index.html">Lar</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="whatsapp.html" target="_blank" aria-label="WhatsApp">
+                    <img src="https://placehold.co/30x30/25D366/FFFFFF?text=W" alt="WhatsApp">
+                </a>
+                <a href="facebook.html" target="_blank" aria-label="Facebook">
+                    <img src="https://placehold.co/30x30/1877F2/FFFFFF?text=F" alt="Facebook">
+                </a>
+                <a href="instagram.html" target="_blank" aria-label="Instagram">
+                    <img src="https://placehold.co/30x30/E4405F/FFFFFF?text=I" alt="Instagram">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="container placeholder-page">
+            <h1>Nosso Instagram</h1>
+            <p>Você está sendo redirecionado para o nosso perfil no Instagram.</p>
+            <p>Se o redirec
