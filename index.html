@@ -113,44 +113,104 @@
   </div>
 </header>
 
-<div class="content">
-  <div class="section">
-    <h2>O Que é Agronegócio?</h2>
-    <p>O agronegócio é o conjunto de atividades econômicas que derivam ou estão conectadas à produção agrícola e seu comércio. Trata-se de um importante pilar da economia brasileira.
+<meta charset="UTF-T">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agronegócio Detalhado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilos personalizados adicionais, se necessário */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .content-section {
+            @apply bg-white shadow-lg rounded-lg p-6 mb-6 transition-all duration-300 ease-in-out;
+        }
+        .content-section h2 {
+            @apply text-2xl font-bold text-gray-800 mb-3;
+        }
+        .content-section p {
+            @apply text-gray-700 leading-relaxed mb-4;
+        }
+        .hidden-text {
+            @apply overflow-hidden max-h-0 transition-all duration-700 ease-in-out;
+        }
+        .hidden-text.show {
+            @apply max-h-screen; /* ou um valor grande o suficiente para o conteúdo */
+        }
+        .show-btn {
+            @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-colors duration-200 ease-in-out cursor-pointer;
+            @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50;
+        }
+        .show-btn.expanded {
+            @apply bg-red-600 hover:bg-red-700;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4 md:p-8">
 
-Aliás, engana-se quem pensa que o agro restringe-se à fazenda e à colheita. Existem vários exemplos de organizações do agro, como empresas de fabricação de máquinas agrícolas, fornecimento de sementes e produtoras de agroquímicos.
+    <div class="container mx-auto max-w-3xl">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl font-bold text-gray-900">Entendendo o Agronegócio</h1>
+        </header>
 
-A agricultura é um dos setores econômicos que mais emprega pessoas no mundo.
+        <div class="content">
+            <div class="content-section">
+                <h2>O Que é Agronegócio?</h2>
+                <p>O agronegócio é o conjunto de atividades econômicas que derivam ou estão conectadas à produção agrícola e seu comércio. Trata-se de um importante pilar da economia brasileira.</p>
+                <p>Aliás, engana-se quem pensa que o agro restringe-se à fazenda e à colheita. Existem vários exemplos de organizações do agro, como empresas de fabricação de máquinas agrícolas, fornecimento de sementes e produtoras de agroquímicos.</p>
+                
+                <div id="text1" class="hidden-text">
+                    <p>A agricultura é um dos setores econômicos que mais emprega pessoas no mundo.</p>
+                    <p>No Brasil, de acordo com dados da Confederação da Agricultura e Pecuária do Brasil (CNA) divulgados no portal Uol, o mercado agro brasileiro registrou a abertura de mais de 61 mil vagas em 2020.</p>
+                    <p>Trata-se do melhor resultado nos últimos 10 anos!</p>
+                    <p>Com a crise e a pandemia, a produção agrícola brasileira ganhou destaque, sendo a válvula de escape para vários países.</p>
+                    <p>Especialmente no Brasil, onde o agronegócio familiar é a principal fonte de alimentos e renda para muitas pessoas que vivem na pobreza.</p>
+                    <p>Assim, investir na agricultura não é apenas uma das estratégias mais eficazes para melhorar a segurança alimentar e promover a sustentabilidade, mas também é essencial para o desenvolvimento econômico de muitos países.</p>
+                    <p>O agronegócio trata os diferentes aspectos da criação de produtos agrícolas como um sistema integrado.</p>
+                    <p>Os agricultores criam animais e colhem frutas e vegetais com a ajuda de técnicas sofisticadas de colheita, incluindo o uso de geolocalização para direcionar as operações.</p>
+                    <p>Por outro lado, os fabricantes da agroindústria desenvolvem máquinas cada vez mais eficientes.</p>
+                    <p>Inclusive, equipamentos autônomos, um exemplo são as colheitadeiras com piloto automático.</p>
+                    <p>Já as fábricas de alimentos, em especial de origem animal, determinam a melhor maneira de processar a carne e embalar o gado para transporte.</p>
+                    <p>Percebe como os elos vão se interligando? Por isso que uma denominação comum do mercado agro é que seja o supply chain por trás dos produtos agrícolas comercializados para o consumidor final.</p>
+                    <p>Embora seja improvável que cada subconjunto dessa indústria interaja diretamente com o consumidor final, cada um se concentra em operar de forma eficiente para manter os preços razoáveis.</p>
+                    <p>Vale ainda ressaltar que o agronegócio é fortemente impactado pelo mercado e suas tendências, bem como por forças naturais, como as mudanças climáticas.</p>
+                </div>
+                <button class="show-btn" onclick="toggleText('text1', this)">Ver mais</button>
+            </div>
 
-No Brasil, de acordo com dados da Confederação da Agricultura e Pecuária do Brasil (CNA) divulgados no portal Uol, o mercado agro brasileiro registrou a abertura de mais de 61 mil vagas em 2020.
+            <div class="content-section">
+                <h2>Importância do Agronegócio</h2>
+                <p>O agronegócio desempenha um papel crucial na economia global, fornecendo alimentos, fibras e combustíveis. Além disso, é uma fonte significativa de emprego e renda para milhões de pessoas em todo o mundo, especialmente em países em desenvolvimento.</p>
+                <p>A inovação tecnológica tem sido um motor chave para o aumento da produtividade e sustentabilidade no setor.</p>
+                
+                <div id="text2" class="hidden-text">
+                    <p>No Brasil, o agronegócio é responsável por uma parcela expressiva do Produto Interno Bruto (PIB) e das exportações. O país se destaca na produção de commodities como soja, milho, café, carne bovina e de frango.</p>
+                    <p>Desafios como a logística, infraestrutura, questões ambientais e a volatilidade dos preços internacionais exigem constante adaptação e investimento por parte dos produtores e empresas do setor.</p>
+                    <p>A busca por práticas agrícolas sustentáveis, que minimizem o impacto ambiental e promovam o bem-estar social, é uma tendência crescente e fundamental para o futuro do agronegócio.</p>
+                </div>
+                <button class="show-btn" onclick="toggleText('text2', this)">Ver mais</button>
+            </div>
 
-Trata-se do melhor resultado nos últimos 10 anos!
-
-Com a crise e a pandemia, a produção agrícola brasileira ganhou destaque, sendo a válvula de escape para vários países.
-
-Especialmente no Brasil, onde o agronegócio familiar é a principal fonte de alimentos e renda para muitas pessoas que vivem na pobreza
-
-Assim, investir na agricultura não é apenas uma das estratégias mais eficazes para melhorar a segurança alimentar e promover a sustentabilidade, mas também é essencial para o desenvolvimento econômico de muitos países. </p>
-    <button class="show-btn" onclick="toggleText('text1')">Ver mais</button>
-    <div id="text1" class="hidden-text">
-      <p>O agronegócio trata os diferentes aspectos da criação de produtos agrícolas como um sistema integrado.
-
-Os agricultores criam animais e colhem frutas e vegetais com a ajuda de técnicas sofisticadas de colheita, incluindo o uso de geolocalização para direcionar as operações.
-
-Por outro lado, os fabricantes da agroindústria desenvolvem máquinas cada vez mais eficientes.
-
-Inclusive, equipamentos autônomos, um exemplo são as colheitadeiras com piloto automático.
-
-Já as fábricas de alimentos, em especial de origem animal, determinam a melhor maneira de processar a carne e embalar o gado para transporte.
-
-Percebe como os elos vão se interligando? Por isso que uma denominação comum do mercado agro é que seja o supply chain por trás dos produtos agrícolas comercializados para o consumidor final.
-
-Embora seja improvável que cada subconjunto dessa indústria interaja diretamente com o consumidor final, cada um se concentra em operar de forma eficiente para manter os preços razoáveis.
-
-Vale ainda ressaltar que o agronegócio é fortemente impactado pelo mercado e suas tendências, bem como por forças naturais, como as mudanças climáticas.</p>
+        </div>
     </div>
-  </div>
 
+    <script>
+        function toggleText(textId, button) {
+            const textElement = document.getElementById(textId);
+            const isExpanded = textElement.classList.toggle('show');
+            
+            if (isExpanded) {
+                button.textContent = 'Ver menos';
+                button.classList.add('expanded');
+            } else {
+                button.textContent = 'Ver mais';
+                button.classList.remove('expanded');
+            }
+        }
+    </script>
+
+</body>
+</html>
   <div class="section">
     <h2>Impactos Ambientais</h2>
     <p>O uso intensivo de terras tem efeitos diretos no meio ambiente.</p>
