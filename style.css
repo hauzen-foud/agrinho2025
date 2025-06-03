@@ -68,3 +68,13 @@ header > h2 {
 main > h1{
     color: green;
 }
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
